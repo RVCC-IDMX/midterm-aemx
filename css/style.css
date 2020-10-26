@@ -10,9 +10,10 @@ header, nav, main, aside, footer {
 }
 
 header {
-    border-radius: 100px 100px 0 0;
+    border-radius: 50px 50px 0 0;
     background-image: url("../img/cave.jpg");
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-position: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     text-shadow: 5px 5px 5px black;
@@ -22,7 +23,7 @@ header {
 }
 
 footer {
-    border-radius: 0 0 100px 100px;
+    border-radius: 0 0 50px 50px;
 }
 
 span:not(:lang(en)) {
@@ -94,4 +95,26 @@ main p:nth-child(3):first-line {
 
 footer {
     text-align: center;
+}
+
+@media screen and (min-width: 786px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+
+    aside h2 {
+       grid-area: h2; 
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+        "h2 h2 h2"
+        ". . ."
+    }
+
 }
