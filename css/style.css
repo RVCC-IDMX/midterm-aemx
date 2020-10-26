@@ -39,6 +39,10 @@ span:not(:lang(en)) {
     font-weight: bold;
 }
 
+h1 {
+    font-size: 32px;
+}
+
 h2 {
     border-bottom: 2px solid black;
 }
@@ -80,6 +84,7 @@ nav ul li:last-child {
 #cover {
     float: left;
     padding: 0 30px 20px 0;
+    width: 60%
 }
 
 main p:nth-child(3):first-line {
