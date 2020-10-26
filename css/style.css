@@ -1,22 +1,97 @@
 /* Journey to the Center of the Earth Practicum */
 /* Spencer Gunning */
 
+header, nav, main, aside, footer {
+    margin: 5px;
+    padding: 40px 20px;
+    border: 5px solid #886644;
+    box-shadow: inset 5px 5px 10px #777777;
+    background: rgba(255, 255, 255, 75%);
+}
+
 header {
-
-}
-
-nav {
-
-}
-
-main {
-
-}
-
-aside {
-
+    border-radius: 100px 100px 0 0;
+    background-image: url("../img/cave.jpg");
+    background-size: 100% 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    box-shadow: inset 4em 4em 4em black;
+    font-size: 40px;
+    text-align: center;
 }
 
 footer {
-    
+    border-radius: 0 0 100px 100px;
+}
+
+span:not(:lang(en)) {
+    font-style: italic;
+}
+
+.character {
+    font-weight: bold;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a52a2a;
+    text-decoration: underline;
+}
+
+body {
+    background-image: linear-gradient(#765729, #000000);
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0px 5px;
+    margin: 0px -1px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+nav ul li:first-child {
+    border-left: 0px solid black;
+}
+
+nav ul li:last-child {
+    border-right: 0px solid black;
+}
+
+main img {
+    float: left;
+    padding: 0 30px 20px 0;
+}
+
+main p:nth-child(3):first-line {
+    font-size: 20px;
+}
+
+.submission {
+    border: 1px solid black;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 50%);
+    padding: 10px;
+    text-align: center;
+}
+
+.signature {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
 }
